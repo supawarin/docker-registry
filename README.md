@@ -54,7 +54,8 @@ nano docker-compose.yml
     
  #### 6. On Linux m/c, let’s modify the .json file is located /etc/docker/daemon.json and insecure-registries with <<ip-address:port>>.
  
-    
+  <img width="804" alt="3 1" src="https://user-images.githubusercontent.com/83863431/181222424-5fd3cd51-3ee9-4fa0-8b73-52d48101c074.png">
+
 
         You can exit and save using CTRL+X then Y and then ENTER.
  
