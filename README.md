@@ -14,7 +14,7 @@ mkdir volume
 nano docker-compose.yml
 
 #### 2. docker-compose.yml ####
-
+<img>
 version: '3'
 
 services:
@@ -36,6 +36,7 @@ services:
     environment:
         ENV_DOCKER_REGISTRY_HOST: docker-registry
         ENV_DOCKER_REGISTRY_PORT: 5000
+   </img>
         
  #######################################  You can exit and save using CTRL+X then Y and then ENTER.     
         
@@ -44,13 +45,13 @@ services:
          docker-compose up -d  
       or sudo docker-compose -f docker-compose.yml up -d
       and check container : docker ps 
-    <img width="1216" alt="Screen Shot 2022-07-27 at 15 58 56" src="https://user-images.githubusercontent.com/83863431/181206884-5c004447-a59a-429c-803e-b43274a5088b.png">
+   
 
  #### 4. find your Ip address ####
  
          docker exec -it [CONTAINER ID] /bin/sh
  and run :  ip addr
-    <img width="1001" alt="Screen Shot 2022-07-27 at 16 15 37" src="https://user-images.githubusercontent.com/83863431/181210559-323e3357-dc71-46f8-bc04-9e1bd087e85f.png">
+    
 
  
  #### 5. Check docker-registry and docker-registry-ui in browser ####
@@ -59,11 +60,10 @@ services:
         ##  20.204.80.36:5000/v2/_catalog ##  for docker-registry
         ##  20.204.80.36:8080/home        ##  for docker-registry-ui
         
-    <img width="706" alt="Screen Shot 2022-07-27 at 16 11 56" src="https://user-images.githubusercontent.com/83863431/181212035-fef4c7e0-9a6d-4762-8fc9-f75b8cec8ebe.png">
-
+    
  #### 6. On Linux m/c, let’s modify the .json file is located /etc/docker/daemon.json and insecure-registries with <<ip-address:port>>.
  
-    <img width="838" alt="Screen Shot 2022-07-27 at 16 25 29" src="https://user-images.githubusercontent.com/83863431/181212584-ca22b733-5c28-4ff6-bb42-3b369bbeebc8.png">
+    
 
  You can exit and save using CTRL+X then Y and then ENTER.
  
@@ -75,9 +75,9 @@ services:
      
      example page :
      
-     <img width="1051" alt="Screen Shot 2022-07-27 at 14 46 26" src="https://user-images.githubusercontent.com/83863431/181215683-f1ae9772-160b-47e7-8ff9-ccd57210d8bd.png">
      
-#### 8. command: curl -X GET http://20.204.80.36[Your ip address]:5000/v2/_catalog  for check Your repositories ####
+     
+#### 8. command: curl -X GET http://20.204.80.36:5000/v2/_catalog  for check Your repositories ####
 
 #### when push Your Images to docker-registry, it add to volume auto. #####
 
