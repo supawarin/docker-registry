@@ -14,7 +14,7 @@ mkdir volume
 nano docker-compose.yml
 
 #### 2. docker-compose.yml ####
-<img>
+
 version: '3'
 
 services:
@@ -36,9 +36,10 @@ services:
     environment:
         ENV_DOCKER_REGISTRY_HOST: docker-registry
         ENV_DOCKER_REGISTRY_PORT: 5000
-   </img>
+ 
         
- #######################################  You can exit and save using CTRL+X then Y and then ENTER.     
+ You can exit and save using CTRL+X then Y and then ENTER.   
+ 
         
  #### 3. Run docker-compose.yml  ####   
  
@@ -65,7 +66,7 @@ services:
  
     
 
- You can exit and save using CTRL+X then Y and then ENTER.
+        You can exit and save using CTRL+X then Y and then ENTER.
  
  #### 7. Push a Docker image to a remote private registry ####
  
