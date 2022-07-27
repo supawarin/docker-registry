@@ -18,27 +18,14 @@ nano docker-compose.yml
 <img width="488" alt="2 1" src="https://user-images.githubusercontent.com/83863431/181220750-d6a0ed59-01ee-4e89-804f-75a94209d218.png">
 
 
-version: '3'
 
-services:
-  docker-registry:
-    image: registry:2
-    container_name: docker-registry
-    restart: always
     ports:
-    - "5000:5000" ### or  "5100:5000" ###
-    volumes:
-      - ./volume:/var/lib/registry
-
-  docker-registry-ui:
-    image: konradkleine/docker-registry-frontend:v2
-    container_name: docker-registry-ui
-    restart: always
+    - "5000:5000"  or  "5100:5000" 
+    
+  
     ports:
-    - "8080:80" ### or another like: "8082:80" ###
-    environment:
-        ENV_DOCKER_REGISTRY_HOST: docker-registry
-        ENV_DOCKER_REGISTRY_PORT: 5000
+    - "8080:80"  or another like: "8082:80" 
+   
  
         
  You can exit and save using CTRL+X then Y and then ENTER.   
@@ -77,10 +64,11 @@ services:
                (sudo) docker tag nginx:latest 20.204.80.36:5000/nginx
                (sudo) docker push 20.204.80.36:5000/nginx
      
-    <img width="1051" alt="1 1" src="https://user-images.githubusercontent.com/83863431/181220876-41c7af07-2e9c-4d14-a8f3-3f48982f5cb7.png">
+    
 
      
-     
+ <img width="1051" alt="1 1" src="https://user-images.githubusercontent.com/83863431/181221416-f622dd81-8385-4ab3-90ad-1950af7ed39c.png">
+
      
 #### 8. command: curl -X GET http://20.204.80.36:5000/v2/_catalog  for check Your repositories ####
 
