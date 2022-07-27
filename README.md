@@ -15,6 +15,9 @@ nano docker-compose.yml
 
 #### 2. docker-compose.yml ####
 
+<img width="488" alt="2 1" src="https://user-images.githubusercontent.com/83863431/181220750-d6a0ed59-01ee-4e89-804f-75a94209d218.png">
+
+
 version: '3'
 
 services:
@@ -74,7 +77,8 @@ services:
                (sudo) docker tag nginx:latest 20.204.80.36:5000/nginx
                (sudo) docker push 20.204.80.36:5000/nginx
      
-     example page :
+    <img width="1051" alt="1 1" src="https://user-images.githubusercontent.com/83863431/181220876-41c7af07-2e9c-4d14-a8f3-3f48982f5cb7.png">
+
      
      
      
