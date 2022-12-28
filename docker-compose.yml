@@ -1,12 +1,14 @@
 version: '3'
 
 services:
+  nginx:
+    build: .
   docker-registry:
     image: registry:2
     container_name: docker-registry
     restart: always
     ports:
-    - "5100:5000"
+    - "5000:5000"
     volumes:
       - ./volume:/var/lib/registry
 
